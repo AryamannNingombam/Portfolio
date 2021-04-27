@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+@font-face {
+  font-family: 'Silom';
+  src: url(./fonts/silom/SilomBol.ttf);
+}
 
 .App-logo {
   height: 40vmin;
@@ -22,6 +26,9 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+body{
+  background-color:#212121;
 }
 
 .App-link {

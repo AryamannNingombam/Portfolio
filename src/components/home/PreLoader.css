@@ -1,0 +1,57 @@
+
+
+#pre-loader-main-body{
+  width:100vw;
+  height:90vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+#main-svg{
+  width:100%;
+}
+
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  30%,70%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+ 
+  100% {
+    opacity: 0;
+  
+  }
+}
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  30%,70%{
+    opacity: 1;
+    transform: translate(0);
+    
+  }
+  100% {
+    opacity: 0;
+    
+  }
+}
+
+
+  
+#Think_Group {
+  animation: moveRight 2.5s ease-in-out 0.3s;
+  animation-fill-mode: backwards;
+   
+}
+#Different_Group {
+  animation: moveLeft 2.5s ease-in-out 0.3s;
+  animation-fill-mode: backwards;
+
+}

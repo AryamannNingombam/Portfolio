@@ -1,0 +1,18 @@
+:root{
+    --text-color: #B5B6B0;
+}
+#main-animation-line{
+    border-bottom:3px solid var(--text-color);
+    transform:scaleX(0);
+    animation : 1s line-animations ease-in-out 0s forwards;
+}
+
+@keyframes line-animations
+ {
+    from{
+        transform:scaleX(0);
+    }
+    to{
+        transform:scaleX(1);
+    }
+}
