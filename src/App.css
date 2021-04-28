@@ -4,6 +4,12 @@
 @font-face {
   font-family: 'Silom';
   src: url(./fonts/silom/SilomBol.ttf);
+  
+}
+@font-face{
+  font-family : "Special elite";
+  src : url(./fonts/special-elite/SpecialElite.ttf);
+
 }
 
 .App-logo {

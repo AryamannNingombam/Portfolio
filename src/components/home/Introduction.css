@@ -1,0 +1,124 @@
+#yo_whats_popping_heading{
+    font-family : "Special Elite";
+    -webkit-text-stoke-width:6px;
+    -webkit-text-stroke-color:black;
+    color:#D5D586;
+    font-size:12vh;
+    display:flex;
+    flex-direction:column;
+    
+    justify-content:flex-end;
+    
+}
+#introduction-main-div{
+    /* margin:5em; */
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-top:4rem;
+
+}
+#head-and-image-area{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+ 
+}
+#introduction-description-area{
+ 
+    width:90%;
+    text-align:center;
+    padding:1.3rem;
+    margin:1.5rem;
+    animation : 1s animate-whats-poppin ease-in-out 1.5s forwards;
+    opacity:0;
+}
+#introduction-description-text{
+    font-family: "Silom";
+    color:#B5B6B0;
+    font-size:1.6rem;
+}
+
+#yo_word{
+
+    opacity:0;
+    animation : 1s animate-yo-word ease-in-out 0.3s forwards;
+}
+#whats_poppin_word{
+    opacity:0;
+    animation : 1s animate-whats-poppin ease-in-out 1s forwards;
+    
+}
+
+
+@keyframes animate-yo-word{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+ 
+
+@keyframes animate-whats-poppin{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+#introduction-profile-photo{
+    width:26rem;
+    height:26rem;
+    margin:0 5rem;
+    border-radius:8%;
+}
+ 
+@media screen and (max-width:1000px) {
+    #yo_whats_popping_heading{
+        font-size:10vh;
+        text-align: center;
+        
+    }   
+    #introduction-profile-photo{
+        margin:3rem 0;
+        
+       }
+           #head-and-image-area{
+               flex-direction: column-reverse;
+               justify-content:center;
+               align-items:center;
+           }
+ 
+} 
+
+
+@media screen and (max-width:800px) {
+    #introduction-description-text{
+        font-size:1.3rem;
+    }
+    
+    #yo_whats_popping_heading{
+        font-size:8vh;
+        
+    }   
+ 
+} 
+
+
+@media screen and (max-width:600px) {
+    #introduction-description-text{
+        font-size:1.1rem;
+    }
+    #yo_whats_popping_heading{
+        font-size:6vh;
+        
+    }   
+ 
+}
