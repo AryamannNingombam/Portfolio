@@ -16,7 +16,7 @@ function Home({setPre}){
 
     };
     
-
+// eslint-disable-next-line
     useEffect(()=>{
     setTimeout(switchDisplay,2800);
         
