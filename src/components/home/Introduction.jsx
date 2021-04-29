@@ -9,7 +9,7 @@ export const Introduction = () => {
             <div id="head-and-image-area">
                 <span id="yo_whats_popping_heading">
                     <span id="yo_word">Yo,</span>    
-                    <span id="whats_poppin_word">what's up?</span>
+                    <span id="whats_poppin_word">what's poppin'?</span>
                 </span>
                 <img id ='introduction-profile-photo' src={profilePhoto}/>
             </div>
@@ -20,7 +20,7 @@ export const Introduction = () => {
              and thinking out various strategies to scale any product.
             I’m a big fitness enthusiast, hyper-competitive for anything
              possible, and a reader. My goals include pursuing 
-             entrepreneurship, learning anything i want faster than 
+             entrepreneurship, learning anything I want faster than 
              most people, being able to do muscle-ups, 
             and being able to talk to women without creeping them out.
 

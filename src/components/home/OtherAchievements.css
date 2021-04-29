@@ -1,0 +1,92 @@
+#other-achievements-main-container{
+display:flex;
+flex-direction: column;
+margin:3rem;
+}
+ 
+
+.other-achievements-heading{
+
+    font-family : var(--heading-font);
+    color: var(--heading-color);
+    
+}
+
+#other-achievements-main-heading{
+    font-size:5rem;
+
+}
+.other-achievements-li{
+    color:var(--text-color);
+    font-family : var(--text-font) ;
+    font-size:1.7rem;
+    margin:0.6rem 0;
+    opacity:0;
+    animation : 1s other-achievements-list-animation ease-in-out 0.8s forwards;
+}
+#other-achievements-patent-heading{
+    font-size:2.2rem;
+    margin:1.5rem 0;
+    
+}
+#other-achievements-patent-area{
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+}
+#other-achievements-patent-link{
+    color:var(--text-color);
+    font-family : var(--text-font) ;
+    font-size:1.2rem;
+    margin:1.5rem 0;
+}
+#other-achievements-patent-href{
+    color:var(--heading-color);
+    font-family : var(--text-font) ;
+    text-decoration: none ;
+    transition:0.4s ease-in-out;
+}
+ 
+#other-achievements-patent-href:hover{
+    color:white;    
+}
+
+
+@media only screen and (max-width: 768px){
+ 
+#other-achievements-main-heading{
+    font-size:3rem;
+
+}   
+.other-achievements-li{
+    font-size:1.2rem;
+ 
+}
+}
+
+
+
+@media only screen and (max-width: 400px){
+ 
+    #other-achievements-main-heading{
+        font-size:1.8rem;
+    
+    }   
+    .other-achievements-li{
+        font-size:0.8rem;
+     
+    }
+
+    }
+
+
+    @keyframes other-achievements-list-animation{
+        from{
+            opacity: 0;
+            transform: translateY(-40px);
+        }to{
+
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }

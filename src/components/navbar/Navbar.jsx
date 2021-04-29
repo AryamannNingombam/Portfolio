@@ -8,7 +8,12 @@ export const Navbar = () => {
         <>
         <div id='navbar-main-div'>
             {/* ary_amann */}
-            <div id='ary_amann'>ary_amann</div>
+            <div id='ary_amann'>
+                <span id="ary_amann-text">
+                ary_amann
+                    </span>                
+                
+                </div>
             <div id='social-links'>
                 <a rel="noreferrer" href="https://www.linkedin.com/in/aryamann-ningombam-a86240183/" target="_blank">Linkedin</a>
              |

@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -13,6 +13,9 @@ import {useState} from 'react';
 
 function App() {
   const [showPreLoader,setShowPreLoader] = useState(true);
+  window.scroll({
+    top:0,
+    behaviour:'smooth'});
   return (
     <Router>
       {!showPreLoader ? <Navbar/> : null}

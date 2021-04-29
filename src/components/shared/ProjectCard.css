@@ -1,31 +1,84 @@
 
  .project-card-main-area{
      height:19rem;
-     width:19rem;
+     width:23rem;
      border-radius:40px;
      border:0.4px solid white;
      margin:1.8rem;
-     transition:0.4s ease-in-out;
+    animation : 1s project-card-area-animate ease-in-out 0s forwards;
      cursor:pointer;
-     opacity:0;
-     transform:scale(0);
-     animation : 1s  project-card-main-area-animation ease-in-out 3s forwards;
+     display:flex;
+     flex-direction:column;
+     justify-content: center;
+     align-items: center;
+     transition:0.6s ease-in-out; 
  }
 .project-card-main-area:hover{
-    transform:scale(1.01);
+    
+    height:19.5rem;
+    width:23.4rem;    
     box-shadow: -6px 2px 60px -6px var(--card-background-blur);
 -webkit-box-shadow: -6px 2px 60px -6px var(--card-background-blur);
 -moz-box-shadow:-6px 2px 60px -6px var(--card-background-blur);
     /* border:none; */
 }
+.project-card-project-name{
+    color:var(--text-color);
+    font-family: var(--text-font);
+    font-size:2.3rem;
+    text-align: center;
 
-@keyframes project-card-main-area-animation{
-    from {
+}
+.project-card-project-image{
+    height:8rem;
+    width:13rem;
+    margin:3rem;
+}
+
+@keyframes project-card-area-animate{
+    from{
         opacity:0;
-        transform:scale(0);
-    }to{
+        transform:scaleY(0);
+        
+    }
+    to{
         opacity:1;
-        transform:scale(1);
+        transform:scaleY(1);
     }
 }
+
+@media screen and (max-width:400px) {
+    .project-card-main-area{
+        height:14rem;
+        width:16rem;
  
+        transition:0.6s ease-in-out; 
+    }
+   .project-card-main-area:hover{
+       
+       height:14.7rem;
+       width:16.7rem;    
+ 
+   }
+    
+}
+@media screen and (max-width:300px) {
+    .project-card-main-area{
+        height:10rem;
+        width:13rem;
+ 
+        transition:0.6s ease-in-out; 
+    }
+   .project-card-main-area:hover{
+       
+       height:10.7rem;
+       width:13.7rem;    
+ 
+   }
+   .project-card-project-image{
+    height:6rem;
+    width:10rem;
+ 
+}
+    
+}

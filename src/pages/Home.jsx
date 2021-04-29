@@ -1,5 +1,7 @@
 import React,{useState,useEffect} from 'react'
+import { ContactMe } from '../components/home/ContactMe';
 import { Introduction } from '../components/home/Introduction';
+import { OtherAchievements } from '../components/home/OtherAchievements';
 import { HomePreLoader } from '../components/home/PreLoader';
 import { Projects } from '../components/home/Projects';
 import { Skills } from '../components/home/Skills';
@@ -30,6 +32,10 @@ function Home({setPre}){
         <LineAnimation/>
         <Projects/>
         <LineAnimation/>
+        <OtherAchievements/>
+        <LineAnimation/>
+        <ContactMe/>
+        
         </>
     )
 

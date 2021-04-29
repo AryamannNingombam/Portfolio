@@ -77,6 +77,7 @@
     margin:0 5rem;
     border-radius:8%;
     opacity:0;
+    
     animation : 1s animate-introduction-main-image ease-in-out 1.5s forwards;
 }
 
