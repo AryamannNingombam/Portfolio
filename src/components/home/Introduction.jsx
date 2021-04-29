@@ -11,7 +11,7 @@ export const Introduction = () => {
                     <span id="yo_word">Yo,</span>    
                     <span id="whats_poppin_word">what's poppin'?</span>
                 </span>
-                <img id ='introduction-profile-photo' src={profilePhoto}/>
+                <img alt="Photu" id ='introduction-profile-photo' src={profilePhoto}/>
             </div>
             <div id="introduction-description-area">
             <span id='introduction-description-text'>

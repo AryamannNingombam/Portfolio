@@ -24,7 +24,7 @@ export const OtherAchievements = () => {
                     Oh, and I hold a patent too
                 </span>
                 <span id="other-achievements-patent-link">
-                    You can read about it more <a id="other-achievements-patent-href" href={PATENT_LINK} rel="noopener" target="_blank">Here</a>
+                    You can read about it more <a id="other-achievements-patent-href" href={PATENT_LINK} rel="noreferrer" target="_blank">Here</a>
                 </span>
 
             </div>
