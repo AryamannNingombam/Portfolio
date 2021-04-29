@@ -1,0 +1,17 @@
+#all-projects-main-heading{
+    font-family: var(--heading-font);
+    color : var(--heading-color);
+    font-size:5rem;
+    
+}
+#all-projects-section{
+    margin:4rem;
+}
+
+#all-projects-card-area{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

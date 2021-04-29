@@ -1,8 +1,6 @@
-:root{
-    --text-color: #B5B6B0;
-}
+ 
 #main-animation-line{
-    border-bottom:3px solid var(--text-color);
+     
     transform:scaleX(0);
     animation : 1s line-animations ease-in-out 0s forwards;
 }
@@ -11,8 +9,10 @@
  {
     from{
         transform:scaleX(0);
+        border-bottom:4px solid white;
     }
     to{
         transform:scaleX(1);
+        border-bottom:3px solid var(--text-color);
     }
 }

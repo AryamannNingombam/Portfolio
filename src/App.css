@@ -1,6 +1,17 @@
 .App {
   text-align: center;
 }
+:root{
+  --text-font : "Silom";
+  --text-color: #B5B6B0;
+  --text-color-hover-navbar:#f5f5f5;
+  --heading-color:#D5D586;
+  --heading-font : "Special elite";
+ 
+    --card-background-blur:#141414;
+ 
+
+}
 @font-face {
   font-family: 'Silom';
   src: url(./fonts/silom/SilomBol.ttf);

@@ -1,0 +1,43 @@
+@keyframes skills-card-animate-card{
+    from{
+        background-color : #5a5959;
+        transform : scaleX(0);
+        opacity:0;
+    } to{
+        background-color : #3c3c3c;
+        transform : scaleX(1);
+        opacity:1;
+    }
+} 
+
+
+.skills-card-main-container{
+    animation : 1s skills-card-animate-card ease-in-out 2s forwards;
+     opacity:0;
+    background-color : #3c3c3c;
+    height:7rem;
+    width:16rem;
+    margin:1.3rem;
+    display:flex;
+    border-radius:40px;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+
+}
+.skill-card-main-heading{
+    color:var(--text-color);
+    font-family : "Silom";
+    font-size:1.8rem;
+}
+
+@media screen and (max-width:600px){
+    
+    .skills-card-main-container{
+        border-radius:20px;
+        height:5rem;
+        width:90%;
+        margin:0.6rem 0;
+     
+    }
+}

@@ -1,7 +1,4 @@
-:root{
-    --text-color: #B5B6B0;
-    --text-color-hover-navbar:#f5f5f5;
-}
+
 #social-links a{
     text-decoration:none;
     color:var(--text-color);
@@ -24,15 +21,19 @@
     grid-gap:5px;
 
     
-    font-family: 'Silom';
+    font-family: var(--text-font);
 }
 
 @keyframes navbar-text-animation {
     from{
         opacity:0;
+        color:white;
+        transform:scale(1.3);
     }
     to{
         opacity:1;
+        color:var(--text-color);
+        transform:scale(1);
     }
     
 }
@@ -78,7 +79,7 @@
         grid-gap:5px;
          
         
-        font-family: 'Silom';
+        font-family:var(--text-font);
     }
     #social-links{
  
@@ -91,4 +92,12 @@
     }
     
 
+}
+@media screen and (max-width:350px){
+    #social-links,#ary_amann{
+     
+        font-size:0.8em;
+     
+     
+    }
 }

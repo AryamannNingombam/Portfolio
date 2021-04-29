@@ -1,8 +1,6 @@
 #yo_whats_popping_heading{
-    font-family : "Special Elite";
-    -webkit-text-stoke-width:6px;
-    -webkit-text-stroke-color:black;
-    color:#D5D586;
+    font-family : var(--heading-font);
+    color:var(--heading-color);
     font-size:12vh;
     display:flex;
     flex-direction:column;
@@ -11,7 +9,7 @@
     
 }
 #introduction-main-div{
-    /* margin:5em; */
+    margin:3rem 0;
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -36,7 +34,7 @@
 }
 #introduction-description-text{
     font-family: "Silom";
-    color:#B5B6B0;
+    color:var(--text-color);
     font-size:1.6rem;
 }
 
@@ -78,25 +76,42 @@
     height:26rem;
     margin:0 5rem;
     border-radius:8%;
+    opacity:0;
+    animation : 1s animate-introduction-main-image ease-in-out 1.5s forwards;
+}
+
+
+@keyframes animate-introduction-main-image{
+    from{
+        opacity:0;
+        transform : scale(1.5);
+    }to { 
+        opacity:1;
+        transform : scale(1);
+    }
 }
  
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1300px) {
     #yo_whats_popping_heading{
-        font-size:10vh;
+        font-size:9vh;
         text-align: center;
         
     }   
+
+
+ 
+} 
+@media screen and (max-width:1100px){
+    #head-and-image-area{
+        flex-direction: column-reverse;
+        justify-content:center;
+        align-items:center;
+    }
     #introduction-profile-photo{
         margin:3rem 0;
         
        }
-           #head-and-image-area{
-               flex-direction: column-reverse;
-               justify-content:center;
-               align-items:center;
-           }
- 
-} 
+}
 
 
 @media screen and (max-width:800px) {
@@ -105,7 +120,7 @@
     }
     
     #yo_whats_popping_heading{
-        font-size:8vh;
+        font-size:2.2rem;
         
     }   
  
@@ -117,8 +132,23 @@
         font-size:1.1rem;
     }
     #yo_whats_popping_heading{
-        font-size:6vh;
+        font-size:1.6rem;
         
     }   
  
+}
+@media screen and (max-width:450px){
+    #introduction-profile-photo{
+        width:20rem;
+        height:20rem;
+        
+    }
+}
+
+@media screen and (max-width:350px){
+    #introduction-profile-photo{
+        width:14rem;
+        height:14rem;
+        
+    }
 }

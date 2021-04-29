@@ -1,0 +1,31 @@
+#skills-main-heading{
+    font-family: var(--heading-font);
+    font-size:5rem;
+    animation : 2s skills-main-heading-animate 1.5s ease-in-out forwards; 
+    margin:3rem;
+    opacity:0;
+    
+}
+@keyframes skills-main-heading-animate{
+    from{
+        color:white;
+        opacity:0;
+    }to{
+        opacity:1;
+        color: var(--heading-color);
+    }
+}
+
+#skills-main-area{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+@media screen and (max-width:800px){
+ #skills-main-heading{
+     font-size:3.3rem;
+ }
+    
+}
